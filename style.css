@@ -1,0 +1,106 @@
+body {
+  background-color: #d2e0fb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  background-color: #fef9d9;
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #8eaccd;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dee5d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8eaccd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7699b7;
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+}
+
+.custom-file-label {
+  background-color: #8eaccd;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.custom-file-label i {
+  margin-right: 5px;
+}
+
+/* Hide the actual file input */
+input[type="file"] {
+  display: none;
+}
+
+#file-name {
+  font-style: italic;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Style for success message */
+#successMessage h2 {
+  color: #8eaccd;
+  text-align: center;
+}
+
+#successMessage p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}

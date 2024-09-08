@@ -3,10 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Job aplication form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
+    <div class="form-container">
+      <h1>Application Form</h1>
+      <!-- Form start -->
+      <form id="applicationForm">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="resume">Resume *</label>
+          <div class="custom-file-upload">
+            <label for="resume" class="custom-file-label">
+              <i class="fas fa-upload"></i> Choose File
+            </label>
+            <input type="file" id="resume" name="resume" required />
+            <span id="file-name">No file chosen</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (Optional)</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <!-- Form end -->
+
+      <!-- Success message -->
+      <div id="successMessage" class="hidden">
+        <h2>Thank you for your time!</h2>
+        <p>We will reach you in the next 3 business days.</p>
+        <p id="currentDate"></p>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
